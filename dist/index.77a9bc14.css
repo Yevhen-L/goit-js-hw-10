@@ -1,0 +1,39 @@
+.size-image {
+  max-width: 300px;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+  background: linear-gradient(0deg, #ff3d0033 33%, #ff3d00 100%);
+  border-radius: 50%;
+  animation: rotation 1s linear infinite;
+  display: inline-block;
+  position: relative;
+}
+
+.loader:after {
+  content: "";
+  box-sizing: border-box;
+  width: 44px;
+  height: 44px;
+  background: #263238;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=index.77a9bc14.css.map */
